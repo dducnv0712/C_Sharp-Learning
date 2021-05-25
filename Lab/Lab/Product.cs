@@ -37,7 +37,7 @@ namespace Lab.Lab
           Console.WriteLine("Descending : " + desc);
         }
 
-        public void InStock()
+        public void CheckQty()
         {
             if (qty > 0)
             {
@@ -50,11 +50,11 @@ namespace Lab.Lab
            
         }
 
-        public void ImageAdd(int img)
+        public void ImageAdd(string img)
         {
-            if (image < 10)
+            if (image <= 10)
             {
-                Gallery.Add(img.ToString());
+                Gallery.Add(img);
             }
             else
             {
