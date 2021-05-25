@@ -1,4 +1,6 @@
-﻿namespace Lab.Lab
+﻿using System;
+
+namespace Lab.Lab
 {
     public class Fashion : Product
     {
@@ -23,12 +25,18 @@
 
         public void checkProduct()
         {
-            
         }
 
         public void checkQty()
         {
-            
+            if(qty>0)
+            {
+                Console.WriteLine("San Pham Con Hang");
+            }
+            else
+            {
+                Console.WriteLine("San Pham Het Hang");
+            }
         }
     }
 }
