@@ -7,7 +7,7 @@ namespace Lab.Lab
     {
         public int id;
         public string name;
-        public double price;
+        public float price;
         public int qty;
         public int image;
         public int desc;
@@ -17,7 +17,8 @@ namespace Lab.Lab
         {
         }
 
-        public Product(int id, string name, double price, int qty, int image, int desc)
+        public Product(int id, string name, 
+            float price, int qty, int image, int desc)
         {
             this.id = id;
             this.name = name;
@@ -37,17 +38,17 @@ namespace Lab.Lab
           Console.WriteLine("Descending : " + desc);
         }
 
-        public void CheckQty()
+        public bool CheckQty()
         {
             if (qty > 0)
             {
                 Console.WriteLine("San Pham Con Hang");
+                return true;
             }
-            else
-            {
-                 Console.WriteLine("San Pham Het Hang");
-            }
-           
+            Console.WriteLine("San Pham Het Hang");
+            return false;
+            
+
         }
 
         public void ImageAdd(string img)

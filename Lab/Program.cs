@@ -1,4 +1,4 @@
-﻿using Lab.Lab;
+﻿/*using Lab.Lab;
 
 namespace Lab
 {
@@ -11,4 +11,4 @@ namespace Lab
             pd.CheckQty();
         }
     }
-}
+}*/
