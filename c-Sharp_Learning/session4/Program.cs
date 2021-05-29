@@ -1,4 +1,4 @@
-﻿namespace c_Sharp_Learning.session4
+﻿/*namespace c_Sharp_Learning.session4
 {
     public delegate void ShowString(string s);
     public class Program
@@ -17,4 +17,4 @@
            ss += new DemoDelagate().ShowInfo;
         }
     }
-}
+}*/

@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 
 namespace Lab.lab4 {
     class Program {
@@ -17,4 +17,4 @@ namespace Lab.lab4 {
 
         }
     }
-}
+}*/
