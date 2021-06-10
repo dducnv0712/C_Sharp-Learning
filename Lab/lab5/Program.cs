@@ -11,7 +11,31 @@ namespace Lab.lab5
                 int min = int.Parse(Console.ReadLine() ?? string.Empty);
                 Console.WriteLine("Set Sec");
                 int sec = int.Parse(Console.ReadLine() ?? string.Empty);
-                while (min>=0){
+                for (; min < 60; )
+                {
+                    for (; sec < 60; sec--)
+                    {
+                        Console.WriteLine(min + " : " + sec);
+                        try
+                        {
+                            Thread.Sleep(100);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine(e);
+                            throw;
+                        }
+
+                        if (sec <0)
+                        {
+                            sec = 59;
+                        }
+
+                        min--;
+                    }
+                }
+                Console.Write("Bummmm...");
+                /*while (min>=0){
                     while (sec>=0){
                         Console.WriteLine(min + " : " + sec);
                         sec--;
@@ -26,7 +50,7 @@ namespace Lab.lab5
                     }
                     min--;
                  
-                }  
+                }  */
                 Console.Write("Bummmm..");
             }
         }
